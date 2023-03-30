@@ -1,3 +1,13 @@
+/*GRAND PLANAS:
+ -kintamieji / atminties lasteles (juose atsimenama informacija)
+ -if'ai(palyginimas)
+ -for'as( ciklai)
+ -funkcijos(function)
+ -ivykiai( event listeners)
+
+*/
+  
+
 // vienos eilutes komentaras
 
 
