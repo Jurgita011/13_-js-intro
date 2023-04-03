@@ -87,3 +87,5 @@ const asmuo = skolininkai[index-1];
 const skola = skolos[index-1];
 console.log(asmuo);
 console.log(`${index})${asmuo}- ${skola}`);
+
+
