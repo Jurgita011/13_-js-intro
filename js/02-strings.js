@@ -9,8 +9,9 @@ STRINGS- simboliu sarasas/(junginys, tekstas (galbut  bet nebutinai )
   -var  (nenaudoti ! nebent zinome ka darome)
 
   String'o iniciavimas:
-  -viengubos kabutes 
-  -dvigubos kabutes
+  -viengubos (') kabutes 
+  -dvigubos (") kabutes
+  -bactick (`)kabutes
 */
 //kintamuju iniciavimas
 const vardas =' Jurga';
@@ -48,7 +49,7 @@ console.log(prisistatymas);
 
 
 const word1 = 'vasara'
-const perPuse =word1 / 2;
+const perPuse =word1 / 2; // number -> NAN (nesamone)
 console.log(perPuse);
   
 console.clear();
@@ -99,7 +100,7 @@ console.log(s3);
 console.clear();
 
 
-             NAMU DARBAI
+            // NAMU DARBAI
 
      //2 uzduotis : veiksmai su kintamaisias 
 
@@ -130,10 +131,99 @@ console.clear();
    console.log(a2);
    console.log(a3);
 
+   console.clear();
+    
+   // Sveiki, Jurgi!
+   const username1 ='Jurgi';
+   const username2 = 'Monika';
+   const username3 ='Jonas';
+   const username4 = 'Ona';
 
+   const hi1='Sveiki,' + username1 +'!';
+   const hi2='Sveiki,' + username2 +'!';
+   const hi3='Sveiki,' + username3 +'!';
+   const hi4='Sveiki,' + username4 +'!';
 
+   console.log(hi1);
+   console.log(hi2);
+   console.log(hi3);
+   console.log(hi4);
+
+   // vienguba (') kabute.
+   const kabute1 = "vienguba (') kabute.";
+   console.log(kabute1);
+
+    // dviguba (") kabute.
+    const kabute2 = 'dviguba(") kabute';
+    console.log(kabute2);
+
+    // vienguba (')  ir  dviguba (") kabutes.
+    const kabute12 = "vienguba (') ir "  +'dviguba (") kabutes' ;
+    console.log(kabute12);
+    
+    const kabute12_1 ="vienguba (\') ir "  +'dviguba (") kabutes';
+    console.log( kabute12_1);
+
+    const kabute12_2 ="vienguba (') ir "  +'dviguba (\") kabutes';
+    console.log(kabute12_2);
+
+    const kabute12_3 ="vienguba (\') ir 'dviguba (\") kabutes";
+    console.log( kabute12_3);
+
+    
+   const kabute3 =`vienguba (') ir dviguba (") kabutes.`;
+   console.log(kabute3);
+
+   // kabutes :'"`.
+   const kabutesAll1 = ' kabutes :\'"`';
+   const kabutesAll2 = " kabutes :'\"`";
+   const kabutesAll3 = ` kabutes :'"\``;
+
+   console.log(kabutesAll1);
+   console.log(kabutesAll2);
+   console.log(kabutesAll3);
+
+  /*
+  <header>
+        <img src="/logo.png" alt=" Logo">
+        <nav>
+            <a href="/">LINK</a>
+            <a href="/">LINK</a>
+            <a href="/">LINK</a>
+        </nav>
+  </header>
+  */
   
-    
-    
-    
- 
+
+const HTML = '<header>\n\
+<img src="./logo.png" alt=" Logo">\n\
+<nav>\n\
+    <a href="/">LINK</a>\n\
+    <a href="/">LINK</a>\n\
+    <a href="/">LINK</a>\n\
+</nav>\n\
+</header>';
+console.log(HTML);
+
+/*
+</header>>href="/>Link</a>t="Logo">
+*/ 
+
+ const HTML2 =`<header>
+ <img src="./logo.png" alt=" Logo">
+ <nav>
+     <a href="/">LINK</a>
+     <a href="/">LINK</a>
+     <a href="/">LINK</a>
+ </nav>
+</header>`
+console.log(HTML2);
+
+// Yuor lucky number is 7 . Congz!
+
+const userNumber =777;
+console.log(`Yuor lucky number is ${userNumber} . Congz!`);
+
+const vardenis= 'Petras';
+const  amzius  = 100;
+console.log(`Sveiki , mano vardas ${vardenis} ir man ${ amzius} metu`);
