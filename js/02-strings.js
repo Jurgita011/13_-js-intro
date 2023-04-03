@@ -98,6 +98,9 @@ console.log(s3);
 
 console.clear();
 
+
+             NAMU DARBAI
+
      //2 uzduotis : veiksmai su kintamaisias 
 
      const a = 14;
