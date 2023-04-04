@@ -78,3 +78,35 @@ console.log(gg);
 //const: number, strings. boolean   no no no 
 //const: array , object    yes yes  
 
+console.clear();
+
+const person={
+    non: 'grata',
+    age: Infinity,
+    name:'nesakysiu',
+    luckyNumbers:[2 , 6, 13, 666, 74],
+
+}
+
+console.log(person);
+console.log('Laimingu skaiciu kiekis:',person.luckyNumbers.length);
+console.log('Pirmas laimingas skaicius:' , person.luckyNumbers[0]);
+
+console.log('vardo ilgis:' ,person.name.length );
+
+console.log([10, 2, 8].length );
+console.log('asdasd'.length); //simboliu sarasas
+console.log(['1', 'a', 'b'].length);
+
+const abc={
+    a:'Aa',
+    b:'Bb',
+    c: 'Cc',
+ 
+}
+console.log(abc);
+console.log(abc.length);
+ const abcKeys= Object.keys(abc);
+ console.log(abcKeys);
+ console.log(abcKeys.length);
+ console.log(Object.keys(abc).length);
