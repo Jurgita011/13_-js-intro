@@ -77,4 +77,3 @@ console.log(hello('Petras'));
 console.log(hello('Maryte', 'Jonas'));
 console.log(hello('Maryte', 'Jonas', 'Ona'));
 
-
