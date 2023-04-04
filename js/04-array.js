@@ -89,3 +89,56 @@ console.log(asmuo);
 console.log(`${index})${asmuo}- ${skola}`);
 
 
+console.clear();
+
+                                         //namu darbai
+
+                             //pirma uzduotis Kintamuju iniciavimas
+
+       //pazymiai2 5, 8, 8, 4, 10
+
+  const pazymiai2 = [5, 8, 9, 4, 10];
+ console.log(pazymiai2) ; 
+
+     const pirmasPazymys2 = pazymiai2;
+      console.log(pirmasPazymys2);
+
+console.log( pazymiai2[0]);
+console.log(pazymiai2[1]);
+console.log(pazymiai2[2]);
+console.log(pazymiai2[3]);
+console.log(pazymiai2[4]);
+
+
+
+
+// seima Monika, Jurgita, Arunas ,Egle, Mantas
+
+const seima =['Monika', 'Jurgita', ' Arunas', 'Egle','Mantas'];
+console.log(seima);
+
+const seima1= seima[0];
+console.log(seima1);
+
+const seimaLast =seima[seima.length-1];
+console.log( 'paskutinis seima:', seimaLast);
+
+
+                                  // antra uzduotis Veiksmai su kintamaisiais
+
+ //1-2+3-4+5
+ const suma = pazymiai2[0] - pazymiai2[1] + pazymiai2[2] - pazymiai2[3] + pazymiai2[4];
+ console.log(suma);
+
+const seimosNariai =seima[0] + ', ' + seima[1] + ', ' + seima[2] + ', ' + seima[3] + ', ' + seima[4] ;
+console.log(seimosNariai);
+ 
+
+
+
+
+
+
+  
+
+ 

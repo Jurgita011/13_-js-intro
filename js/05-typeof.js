@@ -19,3 +19,9 @@ console.log(cType);
 const d = [];
 const dType = typeof d;
 console.log(dType);
+
+
+
+
+
+
