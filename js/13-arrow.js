@@ -1,5 +1,7 @@
 console.clear();
 /*
+ARROW - rodikline strele  => - taip zymima
+
 (param1, param2, …, paramN) => { statements }
 (param1, param2, …, paramN) => expression
 // эквивалентно: (param1, param2, …, paramN) => { return expression; }
