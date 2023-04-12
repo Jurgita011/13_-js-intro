@@ -110,3 +110,51 @@ function arYraTekste2(tekstas, raide) {
 
 // console.log('>>', arYraTekste(kurIeskau, 'p'));
 console.log('>>', arYraTekste2(kurIeskau, 'm'));
+
+console.log('---------------');
+
+console.log('PoMiDoRaS'.toLowerCase());
+console.log('PoMiDoRaS'.toUpperCase());
+
+console.log('PoMiDoRaS'.indexOf('o'));
+console.log('PoMiDoRaS'.indexOf('MiDo'));
+console.log('PoMiDoRaS'.indexOf('xxx'));
+
+console.log('PoMiDoRaS'.repeat(5));
+
+const pakeisti = 'PoMiDoRaS'.replace('M', 'm')
+    .replace('D', 'd')
+    .replace('R', 'r')
+    .replace('S', 's');
+console.log(pakeisti);
+
+console.log('AAAAAAA'.replace('A', 'a'));
+console.log('AAAAAAA'.replaceAll('A', 'a'));
+
+console.clear();
+
+//           012345678 
+console.log('Pomidoras'.slice(2, 5));
+console.log('Pomidoras'.slice(5));
+console.log('Pomidoras'.slice(0, 'Pomidoras'.length - 1));
+console.log('Pomidoras'.slice(0, -3));
+console.log('Pomidoras'.slice(-3));
+
+const k = 'Pomidoras';
+
+const ras3_1 = k.slice(-3) + k.slice(-3) + k.slice(-3);
+console.log(ras3_1);
+
+const ras3_2 = k.slice(-3).repeat(3);
+console.log(ras3_2);
+
+const raides3 = k.slice(-3);
+const ras3_3 = raides3 + raides3 + raides3;
+console.log(ras3_3);
+
+console.log('---------');
+
+console.log('Pomidoras'.trim());
+console.log('    Pomidoras'.trim());
+console.log('    Pomidoras    '.trim());
+console.log('    Pomi     doras    '.trim());
