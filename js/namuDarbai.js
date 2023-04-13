@@ -190,3 +190,16 @@ for (let i = 0; i<arry11.length; i++){ //cikliukas per visa masyva mano atveju a
     console.log(t); // paraso kiek siu momentu suskaiciavo t
 }
 
+console.log('-----------');
+const reduce9 = [1, 2, 3, 4].reduce((t, n) => t * n, 10);
+console.log('9:', reduce9);
+
+const arry9=[1, 2, 3, 4];
+const reduces = arry9.reduce((t1,n) =>t1*n);
+console.log('9', reduced);
+let t1 =10;
+for(let i =0; i < arry9.length; i++){
+    console.log(arry9[i],t1);
+    t1=t1* arry9[i];
+    console.log(t1);
+}
