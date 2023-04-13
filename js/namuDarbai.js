@@ -172,5 +172,21 @@ console.log(feast('bear','cake'));
 
 console.log('---------');
 
+const reduce11 = [1, 2, 3, 4].reduce((t, n) => t % n, 10);  // suma lygi nuliui 
+console.log('11:', reduce11);
 
+
+
+//cia pasidarom for cikla, kad pasiziuret kaip keiciasi viskas
+
+const arry11 = [1, 2, 3, 4];
+const reduced= arry11.reduce((t, n) => t %n, 10); //cia tavo variantas
+
+console.log('11:', reduced);  // parodo kas gaunasi
+let t=10; // priskiriam intial reiksme (kur pas tave, pabaigoj)
+for (let i = 0; i<arry11.length; i++){ //cikliukas per visa masyva mano atveju arr11
+    console.log(arry11[i], t); // atspausdina koks i (indexas) ir kaip pradzioje naujo ciklo atrodo t
+    t= t % arry11[i]; //atleika % skaiciavima
+    console.log(t); // paraso kiek siu momentu suskaiciavo t
+}
 
