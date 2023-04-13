@@ -87,3 +87,43 @@ function suma(...numbers) {
 console.log(suma(1));
 console.log(suma(1, 2));
 console.log(suma(1, 2, 3, 4));
+
+console.log('----------');
+
+const mouse = [1, 2, 3];
+const mouse3xCopy = [...mouse, ...mouse, ...mouse];
+const mouse45 = [...mouse, 4, 5];
+const mouse456 = [6, ...mouse, 4, 5];
+
+console.log(mouse);
+console.log(mouse3xCopy);
+console.log(mouse45);
+console.log(mouse456);
+
+const varle = {
+    pirstu: 4,
+    kelnes: 'green',
+    arKabo: true,
+};
+
+const varle2 = { ...varle };
+const varle3 = { ...varle, ugis: 18 };
+const varle4 = { ...varle, kelnes: 'red' };
+const varle5 = { kelnes: 'red', ...varle, };
+
+console.log(varle);
+console.log(varle2);
+console.log(varle3);
+console.log(varle4);
+console.log(varle5);
+
+let marks = [];
+marks = [...marks, 10];
+marks = [...marks, 2];
+marks = [...marks, 8];
+marks = [...marks, 4];
+marks = [...marks, 6];
+
+marks.push(7);
+
+console.log(marks);
