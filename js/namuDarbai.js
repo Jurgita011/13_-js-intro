@@ -151,3 +151,26 @@ function dalyba(a,b){
     return 'antrasis kintamasis yra netinkamo tipo';
 }
 console.log(dalyba('be',3));
+
+console.clear()
+
+function feast(beast, dish){
+    const x = beast[0];
+    const y = beast[beast.length-1];
+    const z =dish[0];
+    const w =dish[dish.length-1];
+
+     console.log(x+z+y+w);
+    if (x===z && y===w){
+      return true;
+      
+    } else {
+      return false;
+    }
+}
+console.log(feast('bear','cake'));
+
+console.log('---------');
+
+
+
