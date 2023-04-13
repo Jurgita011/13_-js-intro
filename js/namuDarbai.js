@@ -117,3 +117,37 @@ console.log(skaitmenuKiekisSkaiciuje(NaN));
 
 
 console.clear();
+
+function isrinktiRaides(tekstas, raide) {
+    if (typeof tekstas !== 'string') {      // b. patikrinti, ar pirmasis kintamasis yra teksto tipo, jei ne...
+        return 'Pirmasis kintamasis yra netinkamo tipo.';
+    } else if (tekstas.length === 0 && tekstas.length < 100) {     // c. patikrinti, ar pirmasis kintamasis yra ne tuščias tekstas ir ne didesnis nei 100 simbolių, jei ne...
+        return 'Pirmojo kintamojo reikšmė yra netinkamo dydžio.';
+    } else if (typeof raide !== 'number' && !isFinite(raide)) {      // d. patikrinti, ar antrasis kintamasis yra skaičiaus tipo, jei ne...
+        return 'Antrasis kintamasis yra netinkamo tipo.'; 
+    } else if (raide <= 0) {     // e. patikriname, ar antrojo kintamojo vertė yra didesnė už nulį, jei ne...
+        return 'Antrasis kintamasis turi būti didesnis už nulį.';
+    } else if (raide > tekstas.length) { //     f. patikriname, ar antrojo kintamojo vertė yra ne didesnė už pirmojo kintamojo ilgį:
+        return 'Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.';
+    } else {        // g. išrenkame iš nurodyto teksto kas kelintą raidę (pagal antrojo kintamojo žingsnį)
+        let raides = '';
+        for (i = raide - 1; i < tekstas.length; i = i + raide) {
+            raides = raides + tekstas[i]; // h. išrinktas raides sudėti į atskirą kintamąjį, kuris yra teksto tipo
+        }
+        return raides;
+    }
+}
+
+console.log(isrinktiRaides('abcdefg', 2)); // rezultatas: “bdf”
+console.log(isrinktiRaides('abcdefghijkl', 3)); // rezultatas: “cfil”
+console.log(isrinktiRaides('abc', 0)); // “Antrasis kintamasis turi būti didesnis už nulį.”
+console.log(isrinktiRaides('abc', 4)); // “Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.”
+console.log(isrinktiRaides(1561, 2)); // “Pirmasis kintamasis yra netinkamo tipo.”
+
+function dalyba(a,b){
+    if(typeof a ==='number'||isFinite(a)){
+        return'pirmasis kintamasis yra netinkamo tipo';
+    }else if(typeof b ==='number'||isFinite(b));
+    return 'antrasis kintamasis yra netinkamo tipo';
+}
+console.log(dalyba('be',3));
